@@ -28,7 +28,10 @@ sudo apt install \
   ros-humble-cv-bridge \
   ros-humble-image-transport \
   librealsense2-dev
-## Python Packages
+
+
+## 🧰 Python Packages
+
 pip install opencv-python pyrealsense2 numpy
 
 
