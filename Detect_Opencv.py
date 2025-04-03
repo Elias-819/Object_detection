@@ -91,10 +91,10 @@ class RealSenseColorDetectionNode(Node):
                 X, Y, Z = self.pixel_to_world(center_x, center_y, depth_value)
                 """
                 # ✅ 使用实际尺寸判断类型
-                if self.is_square_shape(cnt) and 2 <= size_cm <= 6 and Z < 0.5:
+                if self.is_square_shape(cnt) and 2 <= size_cm <= 6:
                     self.detect_blocks(color, X, Y, Z)
                     label = f"{color} BLOCK"
-                elif 20 <= size_cm <= 35 and Z > 0.3:
+                elif 20 <= size_cm <= 35:
                     self.detect_bins(color, X, Y, Z)
                     label = f"{color} BIN"
                 else:
